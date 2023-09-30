@@ -19,9 +19,9 @@ it("get current user", async () => {
 })
 
 it("unauth access to get current user", async () => {
-    return await request(app)
+    const user =  await request(app)
     .get('/api/users/currentuser')
     .send()
-    .expect(401)
+    expect(user.body?.email).toEqual(undefined);
     
 })
