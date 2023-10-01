@@ -1,5 +1,6 @@
 import buildClient from "../api/build-client"
 const LandingPage =  ({currentUser}) => {
+    console.log("Started......")
     console.log(currentUser)
     return currentUser? <h1>Signed In</h1>:<h1>Not Signed In</h1> 
 }
