@@ -1,6 +1,6 @@
 # This is a basic workflow to help you get started with Actions
 
-name: auth
+name: test-auth
 on:
   pull_request
 jobs:

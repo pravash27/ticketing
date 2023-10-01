@@ -1,6 +1,6 @@
 # This is a basic workflow to help you get started with Actions
 
-name: tickets
+name: test-payments
 on:
   pull_request
 jobs:
@@ -8,4 +8,5 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - run: cd tickets && npm install
+      - run: cd payments && npm install
+  
